@@ -1,0 +1,21 @@
+<div class="container">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+            <th scope="col">Tutorial Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Published Year</th> 
+         </tr>
+      </thead>  
+      <tbody>
+          <tr *ngFor="let tutorial of tutorials">
+            <td>{{tutorial.id}}</td>
+            <td>{{tutorial.title}}</td>
+            <td>{{tutorial.description}}</td>
+            <td>{{tutorial.publishedYear}}</td>
+          </tr>
+      </tbody>
+    </table>
+</div>
